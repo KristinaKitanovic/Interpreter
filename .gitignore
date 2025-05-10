@@ -1,0 +1,47 @@
+# Build directories
+[Bb]in/
+[Oo]bj/
+x64/
+Debug/
+Release/
+interpreter/
+*.exe
+*.dll
+*.lib
+*.pdb
+
+# Visual Studio files
+.vs/
+*.vcxproj.user
+*.VC.db
+*.VC.opendb
+*.suo
+*.user
+*.cache
+*.log
+
+# CMake build directories
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+out/
+build/
+
+# IntelliSense
+*.ipch
+*.tlog
+*.idb
+*.opensdf
+*.sdf
+*.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# OS-specific
+.DS_Store
+Thumbs.db
