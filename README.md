@@ -33,7 +33,7 @@ This interpreter supports the following commands:
 Echoes the input string or the content of the file to the output without any modifications. 
 **Options:**  
 None.
-**Example**
+**Example:**
 $ echo "Hello World!"
 $ echo filename.txt 
 $ echo
@@ -51,7 +51,7 @@ EOF
 Changes the prompt for the interpreter to the string provided in the argument, enclosed in quotes.  
 **Options:**  
 None.
-**Example**
+**Example:**
 $ prompt "&"
 
 
@@ -64,7 +64,7 @@ $ prompt "&"
 Prints the current time from the system clock to the output.  
 **Options:**  
 None.
-**Example**
+**Example:**
 $ time
 
 
@@ -77,7 +77,7 @@ $ time
 Prints the current date from the system clock to the output.  
 **Options:**  
 None.
-**Example**
+**Example:**
 $ time
 
 ---
@@ -89,7 +89,7 @@ $ time
 Creates a file with the specified name and an empty content in the current directory. If the file already exists, an error message is displayed, and no other action is taken.  
 **Options:**  
 None.
-**Example**
+**Example:**
 $ touch newfile.txt
 
 ---
@@ -101,7 +101,7 @@ $ touch newfile.txt
 Deletes the content of the specified file in the current directory.  
 **Options:**  
 None.
-**Example**
+**Example:**
 $ truncate file.txt
 
 ---
@@ -113,7 +113,7 @@ $ truncate file.txt
 Removes the specified file from the file system in the current directory.  
 **Options:**  
 None.
-**Example**
+**Example:**
 $ rm file.txt
 
 ---
@@ -126,7 +126,7 @@ Counts words or characters in the text read from the input stream and prints the
 **Options:**  
 - `-w` Counts words  
 - `-c` Counts characters
-**Example**
+**Example:**
 $ wc -w "Hello"
 $wc -c "Hello"
 $ wc -w input.txt
@@ -144,7 +144,7 @@ EOF
 Finds all occurrences of the string `what` (enclosed in quotes) in the input stream and replaces them with the string `with` (also enclosed in quotes). If `with` is not provided, occurrences of `what` are removed from the input text.  
 **Options:**  
 None.
-**Example**
+**Example:**
  $ tr "How are you" "you" "we"
 
 ---
@@ -156,7 +156,7 @@ None.
 Transfers the first `n` lines of text from the input stream to the output and ignores the rest.  
 **Options:**  
 - `-n` Specifies the number of lines to transfer. The value immediately following `-n` (without spaces) must be a number, indicating the number of lines.
-**Example**
+**Example:**
  $ head -n3 file.txt
 
 ---
@@ -168,7 +168,7 @@ Transfers the first `n` lines of text from the input stream to the output and ig
 Interprets the input stream as a sequence of commands, each on a new line, and processes them one by one as if they were read from the console (batch processing). If any command encounters an error, it prints the error message and continues with the next command. The input stream can contain any command, including the `batch` command itself. Recursion is allowed and should be used with caution.  
 **Options:**  
 None.
-**Example**
+**Example:**
  $ batch
  time 
  date 
