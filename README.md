@@ -35,12 +35,14 @@ Echoes the input string or the content of the file to the output without any mod
 None.
 
 **Example:**
+```bash
 $ echo "Hello World!"
 $ echo filename.txt 
 $ echo
 Hello World!
 How are you?
 EOF
+```
 
 
 ---
@@ -52,9 +54,11 @@ EOF
 Changes the prompt for the interpreter to the string provided in the argument, enclosed in quotes.  
 **Options:**  
 None.
-**Example:**
-$ prompt "&"
 
+**Example:**
+```bash
+$ prompt "&"
+```
 
 ---
 
@@ -65,9 +69,11 @@ $ prompt "&"
 Prints the current time from the system clock to the output.  
 **Options:**  
 None.
-**Example:**
-$ time
 
+**Example:**
+```bash
+$ time
+```
 
 ---
 
@@ -78,8 +84,11 @@ $ time
 Prints the current date from the system clock to the output.  
 **Options:**  
 None.
+
 **Example:**
+```bash
 $ time
+```
 
 ---
 
@@ -90,9 +99,11 @@ $ time
 Creates a file with the specified name and an empty content in the current directory. If the file already exists, an error message is displayed, and no other action is taken.  
 **Options:**  
 None.
-**Example:**
-$ touch newfile.txt
 
+**Example:**
+```bash
+$ touch newfile.txt
+```
 ---
 
 ### `truncate`
@@ -102,9 +113,11 @@ $ touch newfile.txt
 Deletes the content of the specified file in the current directory.  
 **Options:**  
 None.
-**Example:**
-$ truncate file.txt
 
+**Example:**
+```bash
+$ truncate file.txt
+```
 ---
 
 ### `rm`
@@ -114,8 +127,11 @@ $ truncate file.txt
 Removes the specified file from the file system in the current directory.  
 **Options:**  
 None.
+
 **Example:**
+```bash
 $ rm file.txt
+```
 
 ---
 
@@ -127,7 +143,9 @@ Counts words or characters in the text read from the input stream and prints the
 **Options:**  
 - `-w` Counts words  
 - `-c` Counts characters
+
 **Example:**
+```bash
 $ wc -w "Hello"
 $wc -c "Hello"
 $ wc -w input.txt
@@ -135,7 +153,7 @@ $ wc -w
 Hello World!
 How are you?
 EOF
-
+```
 ---
 
 ### `tr`
@@ -145,9 +163,11 @@ EOF
 Finds all occurrences of the string `what` (enclosed in quotes) in the input stream and replaces them with the string `with` (also enclosed in quotes). If `with` is not provided, occurrences of `what` are removed from the input text.  
 **Options:**  
 None.
-**Example:**
- $ tr "How are you" "you" "we"
 
+**Example:**
+```bash
+ $ tr "How are you" "you" "we"
+```
 ---
 
 ### `head`
@@ -157,8 +177,11 @@ None.
 Transfers the first `n` lines of text from the input stream to the output and ignores the rest.  
 **Options:**  
 - `-n` Specifies the number of lines to transfer. The value immediately following `-n` (without spaces) must be a number, indicating the number of lines.
+- 
 **Example:**
+```bash
  $ head -n3 file.txt
+```
 
 ---
 
@@ -169,12 +192,14 @@ Transfers the first `n` lines of text from the input stream to the output and ig
 Interprets the input stream as a sequence of commands, each on a new line, and processes them one by one as if they were read from the console (batch processing). If any command encounters an error, it prints the error message and continues with the next command. The input stream can contain any command, including the `batch` command itself. Recursion is allowed and should be used with caution.  
 **Options:**  
 None.
+
 **Example:**
+```bash
  $ batch
  time 
  date 
  EOF
- 
+```
 
 ### Pipes 
 
