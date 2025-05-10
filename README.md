@@ -33,6 +33,7 @@ This interpreter supports the following commands:
 Echoes the input string or the content of the file to the output without any modifications. 
 **Options:**  
 None.
+
 **Example:**
 $ echo "Hello World!"
 $ echo filename.txt 
